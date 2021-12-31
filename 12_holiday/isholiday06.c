@@ -7,8 +7,8 @@
 #define FIRST_WEEK h->day<8 
 #define SECOND_WEEK h->day>7&&h->day<15
 #define THIRD_WEEK h->day>14&&h->day<22
-#define FOURTH_WEEK h->day>21
-#define LAST_WEEK h->day>24 
+#define FOURTH_WEEK h->day>21&&h->day<29
+#define LAST_WEEK h->day>24&&h->day<32
 
 struct holiday {
 	int month;
