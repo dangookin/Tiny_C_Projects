@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int tohex(c)
+int tohex(int c)
 {
 	if( c>='0' && c<='9' )
 		return(c-'0');
