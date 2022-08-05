@@ -4,7 +4,7 @@
 char *strrev(char *s)
 {
 	int len,i;
-	static char *reversed;
+	char *reversed;
 
 	len = 0;
 	while( *s )

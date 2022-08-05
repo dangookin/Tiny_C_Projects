@@ -4,9 +4,7 @@
 
 char *strappend(char *dest, char *src)
 {
-	/* the address for the new string must be declared static
-	   or else it's discarded when the function exits */
-	static char *s;
+	char *s;
 	char *index;
 
 	/* allocate storage for the new string */

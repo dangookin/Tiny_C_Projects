@@ -14,7 +14,7 @@
  */  
 char *left(char *s,int len)
 {
-	static char *buf;
+	char *buf;
 	int x;
 
 	buf = malloc(sizeof(char)*len+1);
@@ -43,7 +43,7 @@ char *left(char *s,int len)
  */  
 char *mid(char *s, int offset, int len)
 {
-	static char *buf;
+	char *buf;
 	int x;
 
 	buf = (char *)malloc(sizeof(char)*len+1);
@@ -71,7 +71,7 @@ char *mid(char *s, int offset, int len)
  */  
 char *right(char *s,int len)
 {
-	static char *buf;
+	char *buf;
 	char *start;
 	int x;
 
@@ -131,7 +131,7 @@ void strcaps(char *s)
  */  
 char *strinsert(char *org, char *ins, int offset)
 {
-	static char *new;
+	char *new;
 	int size,index,append;
 
 	size = strlen(org)+strlen(ins);
@@ -201,7 +201,7 @@ void strlower(char *s)
 char *strrev(char *s)
 {
 	int len,i;
-	static char *reversed;
+	char *reversed;
 
 	len = 0;
 	while( *s )

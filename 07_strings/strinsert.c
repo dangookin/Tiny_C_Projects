@@ -4,7 +4,7 @@
 
 char *strinsert(char *org, char *ins, int offset)
 {
-	static char *new;
+	char *new;
 	int size,index,append;
 
 	size = strlen(org)+strlen(ins);
