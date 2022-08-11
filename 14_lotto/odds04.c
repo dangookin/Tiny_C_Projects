@@ -55,8 +55,8 @@ int main()
 	printf("Items to draw: ");
 	scanf("%d",&draw);
 
-	/* confirm that either input isn't zero */
-	if( items==0 || draw==0 )
+	/* confirm that either input isn't zero or less than zero */
+	if( items<0 || draw<0 )
 	{
 		fprintf(stderr,"Enter amounts larger than zero\n");
 		return(1);
