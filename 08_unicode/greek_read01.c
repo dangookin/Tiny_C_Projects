@@ -11,7 +11,7 @@ int main()
 	wchar_t line[length];
 
 	fp = fopen(file,"r");
-	if( file==NULL )
+	if( fp==NULL )
 	{
 		fprintf(stderr,"Unable to open %s\n",file);
 		exit(1);

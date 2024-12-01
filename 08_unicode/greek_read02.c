@@ -10,7 +10,7 @@ int main()
 	wint_t ch;
 
 	fp = fopen(file,"r");
-	if( file==NULL )
+	if( fp==NULL )
 	{
 		fprintf(stderr,"Unable to open %s\n",file);
 		exit(1);
