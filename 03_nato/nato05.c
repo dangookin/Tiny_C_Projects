@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 	offset = 0;
 	while( (ch=fgetc(n))!=EOF )
 	{
-		if( isalpha(ch)  )
+		if( isalpha(ch) )
 		{
 			word[offset] = ch;
 			offset++;
@@ -69,8 +69,8 @@ int main(int argc, char *argv[])
 			if( offset > 0 )
 			{
 				word[offset] = '\0';
-				if ( (ch = isterm(word)) != '\0') 
-                    putchar( ch );
+				if ( (ch = isterm(word)) != '\0' ) 
+                                     putchar( ch );
 				offset=0;
 			}
 		}
