@@ -69,7 +69,8 @@ int main(int argc, char *argv[])
 			if( offset > 0 )
 			{
 				word[offset] = '\0';
-				putchar( isterm(word) );
+				if ( (ch = isterm(word)) != '\0') 
+                    putchar( ch );
 				offset=0;
 			}
 		}
