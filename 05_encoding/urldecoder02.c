@@ -39,7 +39,7 @@ int main()
 				putchar(ch);
             else if(ch=='+')  /* alternative space representation */
                 putchar(' ');
-            else if(ch==10)   /* linefeed */
+            else if(ch==10) /* linefeed */
                 break;
 			else
 			{
