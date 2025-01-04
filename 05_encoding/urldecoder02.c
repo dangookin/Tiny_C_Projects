@@ -37,6 +37,10 @@ int main()
 				putchar(ch);
 			else if(isalnum(ch))	/* include the ctype.h header file */
 				putchar(ch);
+            else if(ch=='+')  /* alternative space representation */
+                putchar(' ');
+            else if(ch==10)   /* linefeed */
+                break;
 			else
 			{
 				/* bail on illegal character */
